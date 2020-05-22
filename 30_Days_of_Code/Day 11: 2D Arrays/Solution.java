@@ -12,7 +12,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		int[][] arr = new int[6][6];
-		int sum = 0, max = 0;
+		int sum = 0, max = -63;
 
 		for (int i = 0; i < 6; i++) {
 			String[] arrRowItems = scanner.nextLine().split(" ");

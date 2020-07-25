@@ -24,7 +24,7 @@ public class Solution {
 			try {
 				System.out.println(arr[a].get(b));
 			} catch (Exception e) {
-				System.out.println("ERROR");
+				System.out.println("ERROR!");
 			}
 		}
 

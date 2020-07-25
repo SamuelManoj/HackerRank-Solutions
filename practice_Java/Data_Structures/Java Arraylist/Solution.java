@@ -13,7 +13,6 @@ public class Solution {
 		ArrayList[] arr = new ArrayList[count];
 		for (int i = 0; i < count; i++) {
 			int x = scan.nextInt();
-			// arr[i] = new ArrayList();
 			for (int j = 0; j < x; j++) {
 				arr[i].add(scan.nextInt());
 			}

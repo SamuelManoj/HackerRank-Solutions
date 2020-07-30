@@ -10,19 +10,21 @@ public class Solution {
 
 	// Complete the pairs function below.
 	static int pairs(int k, int[] arr) {
-		int count = 0, i = 0;
-		while (i < arr.length) {
-			int j = i;
-			while (j < arr.length) {
-				int diff = Math.abs(arr[i] - arr[j]);
-				if (k == diff) {
-					count++;
-				}
+		int count = 0, j = 0, i = 0;
+		Arrays.sort(arr);
+		while (j < arr.length) {
+			int diff = arr[j] - arr[i];
+			if (diff == k) {
+				count++;
+				j++;
+			} else if (diff > k) {
+				i++;
+			} else if (diff < k) {
 				j++;
 			}
-			i++;
 		}
 		return count;
+
 	}
 
 	private static final Scanner scanner = new Scanner(System.in);
